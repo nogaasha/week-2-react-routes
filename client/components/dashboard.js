@@ -10,7 +10,7 @@ const Dashboard = () => {
         <div className="bg-indigo-800 text-white font-bold rounded-lg border shadow-lg p-10">
           <div id="title">Dashboard</div>
           This is Dashboard
-          <Link to="/dashboard/profile/bf20e70d-e50c-4bf9-8092-69c044c07b08"> Go To Profile </Link>
+          <div><Link to="/dashboard/profile/bf20e70d-e50c-4bf9-8092-69c044c07b08"> Go To Profile </Link></div>
           <Link to="/dashboard/main"> Go To Main </Link>
         </div>
       </div>

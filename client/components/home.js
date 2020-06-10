@@ -5,6 +5,7 @@ import Header from './header'
 import Main from './dashboard-main'
 import Profile from './dashboard-profile'
 import Dashboard from './dashboard'
+import DummyView from './dummy-view'
 
 const Home = () => {
   return (
@@ -14,10 +15,11 @@ const Home = () => {
         <div className="bg-indigo-800 text-white font-bold rounded-lg border shadow-lg p-10">
           Hello World Dashboard
           <Switch>
+            <Route exact path="/" component={() => <DummyView />} />
             <Route exact path="/dashboard/" component={() => <Dashboard />} />
             <Route exact path="/dashboard/main" component={() => <Main />} />
             <Route exact path="/dashboard/profile/:user" component={() => <Profile />} />
-          </Switch>  
+          </Switch>
           <Link to="/"> Go To Root </Link>
         </div>
       </div>
